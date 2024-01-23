@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florist</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"
+      integrity="sha512-TjBzDQIDnc6pWyeM1bhMnDxtWH0QpOXMcVooglXrali/Tj7W569/wd4E8EDjk1CwOAOPSJon1VfcEt1BI4xIrA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <!-- HEADER PAGE -->
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="logo">
+            <img src="./assets/images/logo.png" alt="" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="./admin.html">ADMIN</a></li>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">PAGES</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <img src="./assets/images/search.png" alt="" />
+          </div>
+          <div class="heart">
+            <img src="./assets/images/heart.png" alt="" />
+            <p>(05)</p>
+          </div>
+          <div class="bag">
+            <img src="./assets/images/bag.png" alt="" />
+            <p>(01)</p>
+            <span>$ 65.0</span>
+          </div>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- GIFT SHOP -->
+    <section id="gift-shop">
+      <div class="gift-shop">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/images/hero-1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="text">
+                <h4>FRESH FLOWER & GIFT SHOP</h4>
+                <h2>Makenig beautiful flowers a part of your life</h2>
+                <button>SHOP NOW</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/images/hero-2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="text">
+                <h4>FRESH FLOWER & GIFT SHOP</h4>
+                <h2>Makenig beautiful flowers a part of your life</h2>
+                <button>SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- LOGO LIST -->
+    <section id="logo-about-page">
+      <div class="container">
+        <div class="logo-about-page">
+          <div class="logo">
+            <img src="./assets/images/benefit-1.png" alt="" />
+            <div class="text">
+              <h4>100% Freshness</h4>
+              <p>Most people are unaware of the less common flower</p>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="./assets/images/benefit-2.png" alt="" />
+            <div class="text">
+              <h4>Made by artist</h4>
+              <p>Most people are unaware of the less common flower</p>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="./assets/images/benefit-3.png" alt="" />
+            <div class="text">
+              <h4>Own courier</h4>
+              <p>Most people are unaware of the less common flower</p>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="./assets/images/benefit-4.png" alt="" />
+            <div class="text">
+              <h4>100% Freshness</h4>
+              <p>Most people are unaware of the less common flower</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FLOWER LIST -->
+    <section id="flower-list">
+      <div class="container">
+        <div class="flower-list">
+          <div class="text">
+            <h4>OUR FLOWER</h4>
+            <h2>New Arrivals</h2>
+          </div>
+          <div class="buttons">
+            <button>ALL</button>
+            <button>Bouquet</button>
+            <button>Flower box</button>
+            <button>Flower shelf</button>
+            <button>Basket of flower</button>
+            <button>Gift combos</button>
+          </div>
+          <div class="products"></div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER PAGE -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer-top">
+            <div class="text">
+              <h4>Company</h4>
+              <nav>
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Servcies</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="text">
+              <h4>Account</h4>
+              <nav>
+                <ul>
+                  <li><a href="#">My cart</a></li>
+                  <li><a href="#">Wisslist</a></li>
+                  <li><a href="#">Login/Register</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="text">
+              <h4>Newletter</h4>
+              <p>
+                Subcribe to our newsletter to get more free tips. No Spam,
+                Promise.
+              </p>
+            </div>
+            <div class="text">
+              <h4>Get in touch</h4>
+              <p>69 North Cleveland Street, Memphis,USA.</p>
+              <p>(123) 8111 9210 - (012) 1111 6868</p>
+              <p>Florisr@supportthem.com</p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>
+              Copyright ©2024 All rights reserved | This template is made with
+              <span> by Colorlib</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

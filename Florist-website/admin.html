@@ -78,7 +78,7 @@
             <input type="text" placeholder="ImageUrl..." />
             <input type="text" placeholder="Title..." />
             <input type="text" placeholder="Category..." />
-            <input type="number" placeholder="Price" />
+            <input type="number" min="1" placeholder="Price" />
             <button type="submit">ADD PRODUCT</button>
           </form>
         </div>
@@ -88,13 +88,16 @@
     <section id="product-table">
       <div class="container">
         <div class="product-table">
-            <div>
-                <input class="search" type="search" placeholder="Search Products...">
-            </div>
-           
-            <div id="asc-button">
-                <button  class="asc-button">ASC</button>
-            </div>
+          <div>
+            <input class="search-inp"
+              placeholder="Search Products..."
+            />
+          </div>
+
+          <div id="asc-button">
+            <button class="asc-button">A-Z</button>
+            <button class="number-asc">ASC</button>
+          </div>
           <table>
             <thead>
               <tr>
@@ -107,9 +110,7 @@
                 <th>EDIT</th>
               </tr>
             </thead>
-            <tbody>
-            
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
       </div>

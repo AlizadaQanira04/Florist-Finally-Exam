@@ -17,6 +17,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   padding: 30px 0;
 }
@@ -27,7 +31,7 @@ header .header {
 }
 header .header nav ul {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   margin-bottom: 0;
   align-items: center;
 }
@@ -81,55 +85,54 @@ header .header .fa-bars {
   }
 }
 
-#gift-shop .gift-shop .carousel-item {
+#gift-shop .gift-shop .carousel-item .box1 {
+  background-image: url("../images/hero-1.jpg");
+  padding: 15rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#gift-shop .gift-shop .carousel-item .box2 {
+  background-image: url("../images/hero-2.jpg");
+  padding: 15rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#gift-shop .gift-shop .carousel-item .box {
   position: relative;
 }
-#gift-shop .gift-shop .carousel-item .text {
-  position: absolute;
-  bottom: 100px;
-  left: 100px;
+#gift-shop .gift-shop .carousel-item .box .text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 15px;
   align-items: flex-start;
-  width: 30%;
+  justify-content: center;
+  width: 40%;
+  position: absolute;
+  left: 130px;
+  bottom: 150px;
 }
-#gift-shop .gift-shop .carousel-item .text h4 {
+#gift-shop .gift-shop .carousel-item .box .text h4 {
   font-family: "Quicksand", sans-serif;
   font-size: 1.2rem;
 }
-#gift-shop .gift-shop .carousel-item .text h2 {
+#gift-shop .gift-shop .carousel-item .box .text h2 {
   font-family: "Libre Baskerville", serif;
   font-size: 3rem;
 }
-#gift-shop .gift-shop .carousel-item .text button {
+#gift-shop .gift-shop .carousel-item .box .text button {
   padding: 10px 2rem;
-  border: none;
+  border: 1px solid transparent;
   background-color: rgba(250, 111, 222, 0.8784313725);
   color: white;
   border-radius: 15px;
+  transition: all 600ms;
 }
-@media only screen and (max-width: 767px) {
-  #gift-shop .gift-shop .carousel-item .text {
-    position: absolute;
-    bottom: 10px;
-    left: 50px;
-  }
-  #gift-shop .gift-shop .carousel-item .text h4 {
-    font-family: "Quicksand", sans-serif;
-    font-size: 1rem;
-  }
-  #gift-shop .gift-shop .carousel-item .text h2 {
-    font-family: "Libre Baskerville", serif;
-    font-size: 2rem;
-  }
-  #gift-shop .gift-shop .carousel-item .text button {
-    padding: 5px 1rem;
-    border: none;
-    background-color: rgba(250, 111, 222, 0.8784313725);
-    color: white;
-    border-radius: 15px;
-  }
+#gift-shop .gift-shop .carousel-item .box .text button:hover {
+  background-color: transparent;
+  border: 1px solid #f446d0;
+  color: #f446d0;
 }
 
 #flower-list {
@@ -190,6 +193,9 @@ header .header .fa-bars {
   align-items: flex-start;
   width: 23%;
 }
+#flower-list .flower-list .products .product img {
+  width: 100%;
+}
 #flower-list .flower-list .products .product a {
   color: #f446d0;
   border: 1px solid #f446d0;
@@ -206,7 +212,6 @@ header .header .fa-bars {
 @media only screen and (max-width: 767px) {
   #flower-list .flower-list .buttons {
     display: flex;
-    flex-direction: column;
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -344,13 +349,12 @@ footer .footer .footer-bottom p span {
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
   footer .footer-top .text {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
     align-items: center;
   }
   footer .footer-top .text ul {
@@ -456,4 +460,133 @@ footer .footer .footer-bottom p span {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+}
+
+#customer-page {
+  background-image: url("../images/call-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 13rem 0;
+}
+#customer-page .customer-page {
+  width: 100%;
+}
+#customer-page .customer-page .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 45%;
+}
+#customer-page .customer-page .text h4 {
+  font-size: 1.1rem;
+  color: white;
+}
+#customer-page .customer-page .text h2 {
+  font-size: 3.5rem;
+  color: white;
+}
+#customer-page .customer-page .text .buttons {
+  display: flex;
+  gap: 2rem;
+}
+#customer-page .customer-page .text .buttons button {
+  padding: 14px 2.5rem;
+  border: none;
+  border-radius: 20px;
+  color: #f446d0;
+  transition: all 600ms;
+}
+#customer-page .customer-page .text .buttons button:hover {
+  background-color: #f446d0;
+  color: white;
+}
+#customer-page .customer-page .text .buttons .order-btn {
+  background-color: rgba(244, 70, 209, 0.8431372549);
+  color: white;
+  transition: all 600ms;
+}
+#customer-page .customer-page .text .buttons .order-btn:hover {
+  background-color: white;
+  color: #f446d0;
+}
+@media only screen and (max-width: 767px) {
+  #customer-page .customer-page .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #customer-page .customer-page .text .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#about-page {
+  background-image: url("../images/right-bg.png.webp");
+  background-position: center;
+  background-size: cover;
+  padding: 13rem 0;
+  margin: 1rem 0;
+}
+#about-page .about-page {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#about-page .about-page .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about-page .about-page .text p {
+  font-size: 1.6rem;
+}
+#about-page .about-page h4 {
+  font-size: 1.3rem;
+}
+#about-page .about-page p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+#florist-page {
+  padding: 4rem 0;
+}
+#florist-page .florist-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#florist-page .florist-page .text p {
+  margin-bottom: 0;
+}
+#florist-page .florist-page .icons {
+  display: flex;
+  gap: 1rem;
+}
+#florist-page .florist-page .icons .fa-brands {
+  transition: all 600ms;
+}
+#florist-page .florist-page .icons .fa-brands:hover {
+  color: #f446d0;
+  cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+  #florist-page .florist-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

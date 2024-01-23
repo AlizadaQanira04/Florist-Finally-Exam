@@ -13,6 +13,9 @@
     padding: 0 5%;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
   padding: 30px 0;
   .header {
@@ -22,7 +25,7 @@ header {
     nav {
       ul {
         display: flex;
-        gap: 2rem;
+        gap: 1.5rem;
         margin-bottom: 0;
         align-items: center;
         li {
@@ -38,10 +41,12 @@ header {
         }
       }
     }
+   
     .heart {
       display: flex;
       align-items: center;
       gap: 5px;
+    
       p {
         margin-bottom: 0;
       }
@@ -50,6 +55,7 @@ header {
       display: flex;
       align-items: center;
       gap: 5px;
+      
       p,
       span {
         margin-bottom: 0;
@@ -86,55 +92,52 @@ header {
   .gift-shop {
     //   height: 100vh;
     .carousel-item {
-      position: relative;
-      .text {
-        position: absolute;
-        bottom: 100px;
-        left: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 30%;
-        h4 {
-          font-family: "Quicksand", sans-serif;
-          font-size: 1.2rem;
-        }
-        h2 {
-          font-family: "Libre Baskerville", serif;
-          font-size: 3rem;
-        }
-        button {
-          padding: 10px 2rem;
-          border: none;
-          background-color: #fa6fdee0;
-          color: white;
-          border-radius: 15px;
-        }
+      .box1 {
+        background-image: url("../images/hero-1.jpg");
+        padding: 15rem 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
-    }
-  }
-  @media only screen and (max-width: 767px) {
-    .gift-shop {
-      .carousel-item {
+      .box2 {
+        background-image: url("../images/hero-2.jpg");
+        padding: 15rem 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .box {
+        position: relative;
         .text {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          align-items: flex-start;
+          justify-content: center;
+          width: 40%;
           position: absolute;
-          bottom: 10px;
-          left: 50px;
+          left: 130px;
+          bottom: 150px;
           h4 {
             font-family: "Quicksand", sans-serif;
-            font-size: 1rem;
+            font-size: 1.2rem;
           }
           h2 {
             font-family: "Libre Baskerville", serif;
-            font-size: 2rem;
+            font-size: 3rem;
           }
           button {
-            padding: 5px 1rem;
-            border: none;
+            padding: 10px 2rem;
+            border: 1px solid transparent;
             background-color: #fa6fdee0;
             color: white;
             border-radius: 15px;
+            transition: all 600ms;
+            &:hover {
+              background-color: transparent;
+              border: 1px solid #f446d0;
+              color: #f446d0;
+            }
           }
         }
       }
@@ -195,6 +198,9 @@ header {
         justify-content: center;
         align-items: flex-start;
         width: 23%;
+        img{
+          width: 100%;
+        }
         a {
           color: #f446d0;
           border: 1px solid #f446d0;
@@ -215,7 +221,7 @@ header {
     .flower-list {
       .buttons {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         gap: 20px;
         justify-content: center;
         align-items: center;
@@ -355,12 +361,12 @@ footer {
       flex-direction: column;
       gap: 2rem;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       .text {
         display: flex;
         flex-direction: column;
         width: 100%;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
         ul {
           display: flex;
@@ -467,6 +473,134 @@ footer {
         height: 80px;
         border-radius: 50%;
       }
+    }
+  }
+}
+#customer-page {
+  background-image: url("../images/call-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 13rem 0;
+  .customer-page {
+    width: 100%;
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      width: 45%;
+      h4 {
+        font-size: 1.1rem;
+        color: white;
+      }
+      h2 {
+        font-size: 3.5rem;
+        color: white;
+      }
+      .buttons {
+        display: flex;
+        gap: 2rem;
+        button {
+          padding: 14px 2.5rem;
+          border: none;
+          border-radius: 20px;
+          color: #f446d0;
+          transition: all 600ms;
+          &:hover {
+            background-color: #f446d0;
+            color: white;
+          }
+        }
+        .order-btn {
+          background-color: #f446d1d7;
+          color: white;
+          transition: all 600ms;
+          &:hover {
+            background-color: white;
+            color: #f446d0;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .buttons {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+#about-page {
+  background-image: url("../images/right-bg.png.webp");
+  background-position: center;
+  background-size: cover;
+  padding: 13rem 0;
+  margin: 1rem 0;
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    h4 {
+      font-size: 1.3rem;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 1rem;
+      color: rgba(0, 0, 0, 0.76);
+    }
+  }
+}
+#florist-page {
+  padding: 4rem 0;
+  .florist-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text {
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .icons {
+      display: flex;
+      gap: 1rem;
+      .fa-brands {
+        transition: all 600ms;
+        &:hover {
+          color: #f446d0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .florist-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
     }
   }
 }

@@ -1,24 +1,10 @@
 {
   "products": [
     {
-      "id": "1",
-      "imageUrl": "./assets/images/product-1.jpg",
-      "title": "Fly Me To The Moon",
-      "price": 27.5,
-      "category": "Bouquet"
-    },
-    {
-      "id": "2",
-      "imageUrl": "./assets/images/product-2.jpg",
-      "title": "Fly Me To The Moon",
-      "price": 27.5,
-      "category": "Bouquet"
-    },
-    {
       "id": "3",
       "imageUrl": "./assets/images/product-3.jpg",
       "title": "Fly Me The Moon",
-      "price": 27.5,
+      "price": "555",
       "category": "Bouquet"
     },
     {
@@ -65,7 +51,7 @@
     },
     {
       "id": "10",
-      "imageUrl": "./assets/images/product-7.jpg",
+      "imageUrl": "./assets/images/product-5.jpg",
       "title": "Fly Me The Moon",
       "price": 27.5,
       "category": "Flower shelf"
@@ -78,15 +64,8 @@
       "category": "Flower shelf"
     },
     {
-      "id": "12",
-      "imageUrl": "./assets/images/product-6.jpg",
-      "title": "Fly Me To The Moon",
-      "price": 27.5,
-      "category": "Basket of flower"
-    },
-    {
       "id": "13",
-      "imageUrl": "./assets/images/product-7.jpg",
+      "imageUrl": "./assets/images/product-6.jpg",
       "title": "Fly Me The Moon",
       "price": 27.5,
       "category": "Basket of flower"
@@ -102,13 +81,6 @@
       "id": "15",
       "imageUrl": "./assets/images/product-7.jpg",
       "title": "Fly Me The Moon",
-      "price": 27.5,
-      "category": "Gift combos"
-    },
-    {
-      "id": "16",
-      "imageUrl": "./assets/images/product-8.jpg",
-      "title": " Me To The Moon",
       "price": 27.5,
       "category": "Gift combos"
     }

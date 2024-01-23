@@ -322,6 +322,10 @@ footer .footer .footer-top .text ul li a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.445);
   font-size: 1rem;
+  transition: all 600ms;
+}
+footer .footer .footer-top .text ul li a:hover {
+  color: #f446d0;
 }
 footer .footer .footer-top .text p {
   color: rgba(0, 0, 0, 0.445);
@@ -406,7 +410,7 @@ footer .footer .footer-bottom p span {
   align-items: center;
 }
 #add-product .add-product form input {
-  padding: 6px 3rem;
+  padding: 6px 4rem;
 }
 #add-product .add-product form button {
   padding: 5px 15px;

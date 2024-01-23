@@ -1,13 +1,6 @@
 {
   "products": [
     {
-      "id": "3",
-      "imageUrl": "./assets/images/product-3.jpg",
-      "title": "Fly Me The Moon",
-      "price": "555",
-      "category": "Bouquet"
-    },
-    {
       "id": "4",
       "imageUrl": "./assets/images/product-4.jpg",
       "title": " Me To The Moon",
@@ -17,13 +10,6 @@
     {
       "id": "5",
       "imageUrl": "./assets/images/product-5.jpg",
-      "title": "Fly Me To The Moon",
-      "price": 27.5,
-      "category": "Flower box"
-    },
-    {
-      "id": "6",
-      "imageUrl": "./assets/images/product-6.jpg",
       "title": "Fly Me To The Moon",
       "price": 27.5,
       "category": "Flower box"

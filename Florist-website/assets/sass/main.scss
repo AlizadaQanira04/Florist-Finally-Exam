@@ -329,6 +329,10 @@ footer {
               text-decoration: none;
               color: rgba(0, 0, 0, 0.445);
               font-size: 1rem;
+              transition: all 600ms;
+              &:hover{
+                color: #f446d0;
+              }
             }
           }
         }
@@ -417,7 +421,7 @@ footer {
       justify-content: center;
       align-items: center;
       input {
-        padding: 6px 3rem;
+        padding: 6px 4rem;
       }
       button {
         padding: 5px 15px;
